@@ -186,7 +186,6 @@ function paintGrid(gridElement)
         {
             darkenStatus++;
         }
-        console.log(`brightness(${brightness})`);
         gridElement.style.backgroundColor = colorToApply;
         gridElement.style.filter = `brightness(${brightness})`;
     }else if(lightenMode) {
@@ -195,7 +194,6 @@ function paintGrid(gridElement)
         {
             lightenStatus++;
         }
-        console.log(`brightness(${brightness}%)`);
         gridElement.style.backgroundColor = colorToApply;
         gridElement.style.filter = `brightness(${brightness}%)`;
     } else {

@@ -18,7 +18,8 @@ body {
 .content {
     display:flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 30px;
     padding: 60px;
     padding-left: 30px;
     flex-wrap: wrap;
@@ -29,8 +30,9 @@ body {
     flex-direction: column;
     gap: 5px;
     align-items: center;
-    flex-grow: 1;
-    flex-shrink: 1;
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 250px;
 
 }
 
@@ -71,8 +73,9 @@ body {
 }
 
 .toy {
-    width: 400px;
-    flex: 3 0 400px;
+    width: 300px;
+    max-width: 650px;
+    flex: 1 0 300px;
     aspect-ratio: 1 / 1;
     background-color: white;
     display: grid;
