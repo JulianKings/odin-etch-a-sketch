@@ -1,2 +1,2 @@
 # odin-etch-a-sketch
-Etch-a-Sketch app in JavaScript
+Etch-a-Sketch classic toy done in JavaScript

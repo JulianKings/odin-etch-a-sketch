@@ -1,0 +1,90 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e5e7eb;
+    font-size: 16px;
+}
+
+.container {    
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    text-align: center;
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.content {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 60px;
+    padding-left: 30px;
+    flex-wrap: wrap;
+}
+
+.menu {
+    display:flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+
+}
+
+.menu-title {
+    font-weight: bold;
+    font-size: 21px;
+}
+
+.menu-size-status {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.menu input[type=color] {
+    visibility: hidden;
+    position: absolute;
+}
+
+.menu span {
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    background-color: black;
+    display: inline-block;
+}
+
+.menu button {
+    margin: 4px;
+    width: 70%;
+    padding: 5px
+}
+
+.active {
+    background-color: #161616;
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.toy {
+    width: 400px;
+    flex: 3 0 400px;
+    aspect-ratio: 1 / 1;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(16, auto);
+    border: 1px solid black;
+    border-bottom: 0px;
+    border-left: 0px;
+}
+
+.toy-item {
+    display: grid;
+    border: 1px solid black;
+    border-top: 0px;
+    border-right: 0px;
+}
