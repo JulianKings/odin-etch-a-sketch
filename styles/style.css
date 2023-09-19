@@ -78,12 +78,17 @@ body {
     flex: 1 0 300px;
     aspect-ratio: 1 / 1;
     background-color: white;
-    display: grid;
-    grid-template-columns: repeat(16, auto);
+    display: flex;
+    flex-direction: column;
     border: 1px solid black;
     border-bottom: 0px;
     border-left: 0px;
     box-shadow: 10px 10px 10px rgba(0,0,0,0.3);
+}
+
+.toy-row {
+    display: flex;
+    flex-direction: row;
 }
 
 .toy-item {

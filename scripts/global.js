@@ -146,11 +146,18 @@ function populateGrid(gridSize)
     let i = 0;
     for(let x = 0; x < gridSize; x++)
     {
+        let toyRow = document.createElement('div');
+        toyRow.classList.add("toy-row");
+        toyRow.style.height = (100 / gridSize) + "%";
+        toyRow.style.width = "100%";
+
         for(let y = 0; y < gridSize; y++)
         {
             // create each grid
             let gridBox = document.createElement('div');
             gridBox.classList.add("toy-item");
+            gridBox.style.width = (100 / gridSize) + "%";
+            gridBox.style.height = "100%";
 
             // add hover and click event
             gridBox.addEventListener('mouseover', (event) => {
@@ -164,8 +171,10 @@ function populateGrid(gridSize)
                 paintGrid(gridBox);
             });
 
-            toyBox.appendChild(gridBox);
+            toyRow.appendChild(gridBox);
         }
+
+        toyBox.appendChild(toyRow);
     }
 }
 
